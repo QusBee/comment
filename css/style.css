@@ -1,0 +1,168 @@
+:root {
+  --color-white: hsl(40 100% 99%);
+  --color-grey-200: hsl(36 23% 91%);
+  --color-grey-300: hsl(0 0% 83%);
+  --color-grey-500: hsl(0 0% 37%);
+  --color-brown-400: hsl(25 28% 21%);
+  --color-brown-500: hsl(29 30% 14%);
+  --color-orange-200: hsl(34 100% 95%);
+  --color-orange-400: hsl(17 88% 90%);
+  --color-orange-500: hsl(17 88% 40%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/InterRegular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/InterMedium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/InterSemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/InterBold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  min-height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-grey-300);
+}
+
+.card {
+  display: flex;
+  max-width: 76rem;
+  padding: 2.4rem;
+  gap: 2rem;
+  border-radius: 3rem;
+  background-color: var(--color-white);
+}
+
+.image {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-grey-500);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.info-top {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-brown-500);
+}
+
+.badge {
+  display: flex;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 10rem;
+  color: var(--color-grey-500);
+  background-color: var(--color-grey-200);
+}
+
+.role {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--color-grey-500);
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.45;
+  color: var(--color-brown-400);
+}
+
+.btns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn {
+  display: flex;
+  padding: 1rem 1.2rem;
+  gap: 0.8rem;
+  border: none;
+  border-radius: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-orange-500);
+  background-color: var(--color-orange-200);
+  transition: background-color 0.5s ease;
+}
+
+.btn-image {
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--color-orange-400);
+  cursor: pointer;
+}
